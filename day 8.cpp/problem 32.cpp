@@ -1,21 +1,15 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int reversenum(int n ,int rev=0){
-  
-  if ( n == 0)
-    return rev ;
-    
-  return reversenum( n/10 , rev*10 + n%10) ;
-
-}
 int main() 
 {
-  int n ;
-  cin>>n ;
-  
-  cout<< "reversenum :"<< reversenum(n);
-
-  return 0;
+    int n;
+    cin>>n;
+    for ( int i=1; i<=n; i++){
+        for (int j=1; j<=i; j++){
+            cout << i ;
+        }
+        cout<<" "<< endl;
+    }
+    return 0;
 }
- 

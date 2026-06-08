@@ -1,20 +1,15 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int digitsum(int n ,int sum=0){
-  
-  if ( n == 0)
-    return sum ;
-    
-  return digitsum( n/10 , sum + n%10) ;
-
-}
 int main() 
 {
-  int n ;
-  cin>>n ;
-  
-  cout<< "sum of the digits :"<< digitsum(n);
-
-  return 0;
+    int n;
+    cin>>n;
+    for ( int i=1; i<=n; i++){
+        for (char ch='A'; ch<='A'+i; ch++){
+            cout << ch ;
+        }
+        cout<<" "<< endl;
+    }
+    return 0;
 }

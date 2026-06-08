@@ -1,19 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int fact(int n){
-  if (n<=1){
-    return 1; 
-  } 
-  return n*fact(n-1);
-
-}
 int main() 
 {
-  int n , result;
-  cin>>n;
-  result = fact(n);
-  
-  cout<< "factorial of " << n  << " is "<< result;
+    int n;
+    cin>>n;
+    for ( int i=1; i<=n; i++){
+        for (int j=1; j<=i; j++){
+            cout << "*";
+        }
+        cout<<" "<< endl;
+    }
     return 0;
 }
